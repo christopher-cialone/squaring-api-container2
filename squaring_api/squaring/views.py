@@ -11,7 +11,7 @@ class SquaringView(View):
     the get request 'get's hit and the class below runs its program!
     '''
     def get(self, request, number):
-        return HttpResponse(number ** 2)
+        return HttpResponse(int(number) ** 2)
 
 
 class HelloWorldView(View):
